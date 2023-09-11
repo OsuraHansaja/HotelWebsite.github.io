@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Merlot</title>
+    <script
+      src="https://kit.fontawesome.com/8027850733.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <a class="nav__logo" href="index.html"
+              ><img
+                src="merlot-low-resolution-logo-color-on-transparent-background.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="menu-items">
+            <ul>
+              <li><a class="nav_link" href="index.html">Home</a></li>
+              <li><a class="nav_link" href="Branches.html">Branches</a></li>
+              <li>
+                <a class="nav_link active" href="Restaurants.html"
+                  >Restaurants</a
+                >
+              </li>
+              <li><a class="nav_link" href="Activities.html">Activities</a></li>
+              <li><a class="nav_link" href="Bookings.html">Bookings</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav">
+      <div>
+        <a class="nav_link" href="index.html">Home</a>
+        <a class="nav_link" href="Branches.html">Branches</a>
+        <a class="nav_link active" href="Restaurants.html">Restaurants</a>
+        <a class="nav_link" href="Activities.html">Activities</a>
+        <a class="nav_link" href="Bookings.html">Bookings</a>
+      </div>
+      <div>
+        <a class="nav__logo" href="index.html"
+          ><img
+            src="merlot-low-resolution-logo-color-on-transparent-background.png"
+            alt=""
+        /></a>
+      </div>
+    </nav>
+    <div>
+      <section id="Restaurants">
+        <div class="card">
+          <img
+            src="https://source.unsplash.com/Uiro__CkZMs"
+            alt="Italian resturant"
+          />
+          <p><b>Bella Cucina Ristorante</b></p>
+          <p>Types of cuisine served: Italian</p>
+          <button onclick="window.open('menu bella cucina.pdf', '_blank');">
+            View Menu
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="https://source.unsplash.com/q66grqqHpDQ"
+            alt="Chinese resturant"
+          />
+          <p><b>Jade Dragon Dining</b></p>
+          <p>Types of cuisine served: Chinese</p>
+          <button onclick="window.open('menu jade dragon.pdf', '_blank');">
+            View Menu
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="https://source.unsplash.com/POFG828-GQc"
+            alt="Indian resturant"
+          />
+          <p><b>Maharaja's Feast</b></p>
+          <p>Types of cuisine served: Indian</p>
+          <button onclick="window.open('menu maharajas feast.pdf', '_blank');">
+            View Menu
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <div id="event-btn__wrapper">
+      <div class="position">
+        <!--Pizza Making Night -->
+        <div class="svg-wrapper">
+          <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="150" />
+            <div id="text">
+              <a href="PizzaMaking.html">
+                <span class="spot"></span>
+                Pizza Making
+              </a>
+            </div>
+          </svg>
+        </div>
+        <!--Chinese Food Night -->
+        <div class="svg-wrapper">
+          <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+            <rect id="shape" height="40" width="150" />
+            <div id="text">
+              <a href="ChineseStrtFood.html">
+                <span class="spot"></span>
+                Chinese Street
+              </a>
+            </div>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a class="nav__logo" href="index.html"
+            ><img
+              src="merlot-low-resolution-logo-color-on-transparent-background.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="footer-social">
+          <p>
+            Find us on: <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </p>
+        </div>
+        <div class="footer-disclaimer">
+          2023 Merlot Hotels. All Copyrights Reserved &copy;.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

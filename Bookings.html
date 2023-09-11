@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Merlot</title>
+    <script
+      src="https://kit.fontawesome.com/8027850733.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <a class="nav__logo" href="index.html"
+              ><img
+                src="merlot-low-resolution-logo-color-on-transparent-background.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="menu-items">
+            <ul>
+              <li><a class="nav_link" href="index.html">Home</a></li>
+              <li><a class="nav_link" href="Branches.html">Branches</a></li>
+              <li>
+                <a class="nav_link" href="Restaurants.html">Restaurants</a>
+              </li>
+              <li><a class="nav_link" href="Activities.html">Activities</a></li>
+              <li>
+                <a class="nav_link active" href="Bookings.html">Bookings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav">
+      <div>
+        <a class="nav_link" href="index.html">Home</a>
+        <a class="nav_link" href="Branches.html">Branches</a>
+        <a class="nav_link" href="Restaurants.html">Restaurants</a>
+        <a class="nav_link" href="Activities.html">Activities</a>
+        <a class="nav_link active" href="Bookings.html">Bookings</a>
+      </div>
+      <div>
+        <a class="nav__logo" href="index.html"
+          ><img
+            src="merlot-low-resolution-logo-color-on-transparent-background.png"
+            alt=""
+        /></a>
+      </div>
+    </nav>
+    <section id="bookings">
+      <div id="room-booking">
+        <h2>Book a Room</h2>
+        <div class="input-field">
+          <label for="check-in">Check in date</label>
+          <br />
+          <input type="date" id="check-in" name="check-in" />
+        </div>
+        <div class="input-field">
+          <label for="check-out">Check out date</label>
+          <br />
+
+          <input type="date" id="check-out" name="check-out" />
+        </div>
+        <div class="input-field">
+          <label for="room-type">Room type</label>
+          <br />
+          <select name="room-type" id="room-type">
+            <option>Select Room Type</option>
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+            <option value="executive">Executive Suite</option>
+          </select>
+        </div>
+        <div class="input-field">
+          <label for="guest-number">Number of guests</label>
+          <br />
+          <input type="number" id="guest-number" name="guest-number" min="0" />
+        </div>
+        <button class="book-button">Book now</button>
+      </div>
+      <div id="activity-booking">
+        <h2>Book an Activity</h2>
+        <div class="input-field">
+          <label for="activity-date">Activity Date</label>
+          <br />
+          <input type="date" id="activity-date" name="activity-date" />
+        </div>
+        <div class="input-field">
+          <label for="activity-type">Activity type</label>
+          <br />
+          <select name="activity-type" id="activity-type">
+            <option>Select Activity Type</option>
+            <option value="bbq">Rooftop BBQ</option>
+            <option value="bus-tour">City Bus Tour</option>
+            <option value="Spa">Spa and Wellness Treatment</option>
+          </select>
+        </div>
+        <div class="input-field">
+          <label for="guest-number__activity">Number of guests</label>
+          <br />
+          <input
+            type="number"
+            id="guest-number__activity"
+            name="guest-number__activity"
+            min="0"
+          />
+        </div>
+        <button class="book-button">Book now</button>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a class="nav__logo" href="index.html"
+            ><img
+              src="merlot-low-resolution-logo-color-on-transparent-background.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="footer-social">
+          <p>
+            Find us on: <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </p>
+        </div>
+        <div class="footer-disclaimer">
+          2023 Merlot Hotels. All Copyrights Reserved &copy;.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
