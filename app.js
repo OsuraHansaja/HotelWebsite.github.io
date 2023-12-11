@@ -311,6 +311,10 @@ document.addEventListener('DOMContentLoaded', function () {
     overallBookingNumberElement.innerText = overallBookingNumber;
     overallBookingCostElement.innerText = overallBookingCost;
 
+    // Display a confirmation alert for booking
+    alert(`Your booking has been saved, proceed to confirm order once you are done.
+    `);
+    
     // Reset room-related fields
     resetRoomFields();
 
