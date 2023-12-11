@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Merlot</title>
+    <script
+      src="https://kit.fontawesome.com/8027850733.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <a class="nav__logo" href="index.html"
+              ><img
+                src="merlot-low-resolution-logo-color-on-transparent-background.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="menu-items">
+            <ul>
+              <li><a class="nav_link" href="index.html">Home</a></li>
+              <li><a class="nav_link" href="Branches.html">Branches</a></li>
+              <li>
+                <a class="nav_link" href="Restaurants.html">Restaurants</a>
+              </li>
+              <li><a class="nav_link" href="Activities.html">Activities</a></li>
+              <li><a class="nav_link active" href="form.html">Bookings</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav">
+      <div>
+        <a class="nav_link" href="index.html">Home</a>
+        <a class="nav_link" href="Branches.html">Branches</a>
+        <a class="nav_link" href="Restaurants.html">Restaurants</a>
+        <a class="nav_link" href="Activities.html">Activities</a>
+        <a class="nav_link active" href="form.html">Bookings</a>
+      </div>
+      <div>
+        <a class="nav__logo" href="index.html"
+          ><img
+            src="merlot-low-resolution-logo-color-on-transparent-background.png"
+            alt=""
+        /></a>
+      </div>
+    </nav>
+    <div class="nav-background"></div>
+    <!-- Booking form starts here -->
+    <form id="bookingForm">
+      <!-- Customer Information Section -->
+      <h2>Customer Info</h2>
+      <label for="name">Your name: </label>
+      <input type="text" id="name" name="name" required />
+
+      <!-- Room Booking Section -->
+      <h2>Room Booking</h2>
+
+      <!-- Dropdown to choose room type -->
+      <label for="roomType">Choose Room Type:</label>
+      <select id="roomType" name="roomType">
+        <option value="defaultRoom">Select Room</option>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="triple">Triple</option>
+      </select>
+
+      <!-- Input for number of rooms, adults, children, and duration of stay -->
+      <label for="numRooms">Number of Rooms:</label>
+      <input type="number" id="numRooms" name="numRooms" min="1" required />
+
+      <label for="numAdults">Number of Adults:</label>
+      <input type="number" id="numAdults" name="numAdults" min="1" required />
+
+      <label for="numChildren">Number of Children:</label>
+      <input
+        type="number"
+        id="numChildren"
+        name="numChildren"
+        min="0"
+        required
+      />
+
+      <!-- Input for check-in date -->
+      <label for="checkInDate">Check-In Date:</label>
+      <input type="date" id="checkInDate" name="checkInDate" required />
+
+      <label for="duration">Duration of Stay (in days):</label>
+      <input type="number" id="duration" name="duration" min="1" required />
+
+      <!-- Dropdown to choose the view -->
+      <label for="view">Choose View:</label>
+      <select id="view" name="view">
+        <option value="pool">Pool View</option>
+        <option value="garden">Garden View</option>
+      </select>
+
+      <!-- Checkboxes for WiFi and Extra Bed options -->
+      <label for="wifi">Need WiFi:</label>
+      <input type="checkbox" id="wifi" name="wifi" />
+
+      <label for="extraBed">Extra bed:</label>
+      <input type="checkbox" id="extraBed" name="extraBed" />
+
+      <!-- Promo Code Section -->
+      <label for="promoCode">Enter Promo Code:</label>
+      <input type="text" id="promoCode" name="promoCode" />
+      <button type="button" id="applyCode">Apply Code</button>
+
+      <!-- Button to book a room -->
+      <button type="button" id="bookRoom">Book Room</button>
+
+      <!-- Adventure Booking Section -->
+      <h2>Adventure Booking</h2>
+
+      <!-- Dropdown to choose adventure type -->
+      <label for="adventureType">Choose Adventure Type:</label>
+      <select id="adventureType" name="adventureType">
+        <option value="defaultAdventure">Select Adventure</option>
+        <option value="localAdult">Diving for Local Adults</option>
+        <option value="localKids">Diving for Local Kids</option>
+        <option value="foreignAdult">Diving for Foreign Adults</option>
+        <option value="foreignKids">Diving for Foreign Kids</option>
+      </select>
+
+      <!-- Checkbox for the need of a guide -->
+      <label for="guide">Need a Guide:</label>
+      <input type="checkbox" id="guide" name="guide" />
+
+      <!-- Button to book an adventure -->
+      <button type="button" id="bookAdventure">Book Adventure</button>
+
+      <!-- Loyalty Points Section -->
+      <h2>Loyalty Points</h2>
+      <button type="button" id="loyaltyCheck">Check Loyalty Points</button>
+      <p>
+        (Book before checking)<br />
+        Loaylty Points on this order: <span id="loyaltyPoints">0</span> Pts.
+      </p>
+
+      <!-- Display Section -->
+      <h2>Booking Information</h2>
+
+      <div id="currentBooking">
+        <p>Cost of Current Booking: <span id="currentCost"></span></p>
+      </div>
+      <div id="overallBooking">
+        <p>Overall Booking: <span id="overallBookingNumber"></span></p>
+        <p>Overall Cost of: <span id="overallBookingCost"></span> LKR</p>
+      </div>
+
+      <!-- Button -->
+      <button type="button" id="confirmOrder">Confirm Order</button>
+      <button type="button" id="favourite">Add to favourites</button>
+    </form>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a class="nav__logo" href="index.html"
+            ><img
+              src="merlot-low-resolution-logo-color-on-transparent-background.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="footer-social">
+          <p>
+            Find us on: <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </p>
+        </div>
+        <div class="footer-disclaimer">
+          2023 Merlot Hotels. All Copyrights Reserved &copy;.
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
