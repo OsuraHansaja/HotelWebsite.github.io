@@ -345,6 +345,10 @@ document.addEventListener('DOMContentLoaded', function () {
       cost,
     };
 
+    // Display a confirmation alert for booking
+    alert(`Your booking has been saved, proceed to confirm order once you are done.
+    `);
+
     // Update overall booking details
     overallBookingDetails.Bookings.adventures.push(adventure);
     overallBookingNumber++;
@@ -395,6 +399,10 @@ document.addEventListener('DOMContentLoaded', function () {
     overallBookingDetails.userName = userName.value;
     // Store the overall booking details in the local storage as a favorite
     localStorage.setItem('FavBooking', JSON.stringify(overallBookingDetails));
+    
+    // Display a confirmation alert for saving to favourites
+    alert(`Your order has been addded to favourites, proceed to confirm order once you are done.
+    `);
   });
 
   // Event listener for "Confirm Order" button
