@@ -377,6 +377,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Set the promoApplied flag to true
       promoApplied = true;
+
+      alert(`Your code is applied, Please continue with your booking.
+      `);
+    }else{
+      alert(`Your code is incorrect, try again.
+    `);
     }
   });
 
