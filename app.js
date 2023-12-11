@@ -392,6 +392,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (checkTotalRooms() > 3) {
       // Update the loyalty points display
       loyaltyPoints.innerText = checkTotalRooms() * 20;
+    }else{
+      alert(`You need to book 4 or more rooms to gain loyalty points.
+    `);
     }
   });
 
