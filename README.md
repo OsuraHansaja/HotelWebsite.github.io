@@ -9,7 +9,7 @@ HotelWebsite is a static website created to learn and practice frontend developm
 - **JavaScript**: Programming language used to add interactivity to the website.
 
 ## Demo
-The website is hosted using GitHub Pages. You can view it live at: [HotelWebsite Demo](https://github.com/HansajaOsu/HansajaOsu.github.io)
+The website is hosted using GitHub Pages. You can view it live at: [HotelWebsite Demo](https://hansajaosu.github.io/)
 
 ## Getting Started
 
